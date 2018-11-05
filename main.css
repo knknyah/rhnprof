@@ -1,0 +1,393 @@
+body {
+
+  background-color:#0E0C0E!important;
+
+  background-image:none!important;
+
+}
+
+
+
+#left_container,.topad,.profile_text,.uppermenu,#buyers_ad,table.fpix_header,#show_chat_btn {
+
+  display: none;
+
+}
+
+
+
+.header{
+
+  width:100%;
+
+  position:absolute;
+
+  top:0;
+
+  left:0;
+
+}
+
+
+
+.header img {
+
+  width:100%;
+
+}
+
+
+
+.charselect {
+
+  width:100%;
+
+  position:absolute;
+
+  left:0;
+
+  margin-top:5%;
+
+  animation-name:rollout;
+
+  animation-duration:1s;
+
+}
+
+
+
+@keyframes rollout {
+
+  from{left:-100%}to{left:0}
+
+}
+
+
+
+.roster {
+
+  width:100%;
+
+  max-width:900px;
+
+  position:relative;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  text-align:center;
+
+}
+
+
+
+.selection {
+
+  width:100%;
+
+  background-image:url('http://i.xomf.com/pkzhn.png');
+
+  background-size:contain;
+
+  position:absolute;
+
+  bottom:0;
+
+  left:0;
+
+}
+
+
+
+.roro {
+
+  position:absolute;
+
+  top:0;
+
+  left:0;
+
+  width:49%;
+
+  height:100%;
+
+  overflow:hidden;
+
+}
+
+
+
+.roropic {
+
+  height:100%;
+
+  width:53%;
+
+}
+
+
+
+.roropic img, .selectedpic img {
+
+  height:100%;
+
+  width:100%;
+
+  object-fit:cover;
+
+}
+
+
+
+.overlay {
+
+  z-index:1;
+
+  position:relative;
+
+  bottom:0;
+
+  left:0;
+
+}
+
+
+
+.roro span,.charname span {
+
+  position:absolute;
+
+  z-index:1;
+
+  font-weight:bold;
+
+  font-family:helvetica;
+
+  color:white;
+
+  text-shadow: 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 4px 4px #000;
+
+  text-transform:capitalize;
+
+  font-size:30px;
+
+}
+
+
+
+.charname span {
+
+  bottom:40%;
+
+  right:11%;
+
+}
+
+
+
+.selected {
+
+  position:absolute;
+
+  top:0;
+
+  right:0;
+
+  width:52%;
+
+  height:100%;
+
+  overflow:hidden;
+
+}
+
+
+
+.selectedpic {
+
+  height:100%;
+
+  width:50%;
+
+}
+
+
+
+.charname {
+
+  position:relative;
+
+  width:200%;
+
+  height:100%;
+
+  top:-100%;
+
+  left:0;
+
+  z-index:2;
+
+}
+
+
+
+.overlay img {
+
+  width:100%;
+
+}
+
+
+
+.accounts {
+
+  display:inline-block;
+
+  position:relative;
+
+  margin:1px;
+
+}
+
+
+
+.rohan {
+
+  display:inline-block;
+
+  position:relative;
+
+  margin:-1px;
+
+  padding:2px;
+
+  background-color:#FE3536;
+
+  animation-name:redfade;
+
+  animation-duration:2s;
+
+  animation-iteration-count:infinite;
+
+}
+
+
+
+a.accounts span, .rohan span {
+
+  position:absolute;
+
+  left:calc(50% - 1px);
+
+  transform:translateX(-50%);
+
+  bottom:1px;
+
+  z-index:1;
+
+  font-family:helvetica;
+
+  color:white;
+
+  text-shadow: 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 2px 2px #000;
+
+  text-transform:uppercase;
+
+  font-size:12px;
+
+}
+
+
+
+a.accounts:hover span, a.accounts:focus span, .rohan span {
+
+  bottom:3px;
+
+}
+
+
+
+.accounts img, .rohan img {
+
+  width:60px;
+
+  height:60px;
+
+  border: solid 1px #000;
+
+}
+
+
+
+.accounts:hover img, .accounts:focus img, .rohan img {
+
+  border-radius:8px 0;
+
+  overflow:hidden;
+
+}
+
+
+
+.accounts:hover, .accounts:focus {
+
+  margin:-1px;
+
+  padding:2px;
+
+  background-color:#257CF6;
+
+  animation-name:bluefade;
+
+  animation-duration:2s;
+
+  animation-iteration-count:infinite;
+
+  outline:none!important;
+
+}
+
+
+
+.roropic img, .selectedpic:target img {
+
+  position:relative;
+
+  animation-name:sweep;
+
+  animation-duration:0.5s;
+
+}
+
+
+
+@keyframes sweep {
+
+  from{left:50%;}to{left:0;}
+
+}
+
+
+
+@keyframes bluefade {
+
+  0%{background-color:#257CF6}
+
+  50%{background-color:#3DA9F0}
+
+  100%{background-color:#257CF6}
+
+}
+
+
+
+@keyframes redfade {
+
+  0%{background-color:#FE3536}
+
+  50%{background-color:#F37C6D}
+
+  100%{background-color:#FE3536}
+
+}
